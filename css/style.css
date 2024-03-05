@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Roboto+Mono:ital@0;1&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Lora", serif;
+  font-family: "Roboto Mono", monospace;
+}
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+img {
+  max-width: 150px;
+}
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-justify h1 {
+  text-align: center;
+}
+.flex-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tutorial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5%;
+  animation: shake 2s infinite;
+}
+
+@keyframes shake {
+  10% {
+    transform: translateX(6px);
+  }
+  30% {
+    transform: translateX(-6px);
+  }
+  50% {
+    transform: translateX(6px);
+  }
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+}
+.overlay-elements {
+  height: 100%;
+}
+hr {
+  height: 3px !important;
+  width: 130px;
+  text-align: center;
+  position: relative;
+  background: gray;
+  margin: 1rem auto !important;
+  margin-bottom: 20px;
+  border: 0;
+}
+
+div[class*="element-c"] {
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 10px;
+  position: absolute;
+  right: 7.5%;
+  top: 10%;
+  width: 50%;
+  padding: 2rem;
+  animation: SlidInElements 1.5s forwards;
+}
+.form-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30% !important;
+
+  padding: 3rem !important;
+}
+.form-div h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+input {
+  margin-bottom: 1rem;
+  box-shadow: rgba(27, 4, 4, 0.24) 0px 3px 8px;
+  width: 100%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 5px solid #84a98c;
+  padding: 0.3rem;
+  text-align: center;
+  color: black;
+}
+textarea {
+  width: 100%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 5px solid #84a98c;
+  color: black;
+  padding: 0.3rem;
+}
+textarea:focus {
+  outline: none;
+  border-bottom: 8px solid #84a98c;
+}
+::placeholder {
+  color: black;
+  font-size: medium;
+  text-align: center;
+}
+input:focus {
+  outline: none;
+  border-bottom: 8px solid #84a98c;
+}
+
+.hide {
+  display: none !important;
+}
+@keyframes SlidInElements {
+  0% {
+    transform: translateY(-150%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+div[class*="ElementC"] h1 {
+  text-align: center;
+}
+
+@keyframes SlidOutElements {
+  0% {
+    transform: translateY(0%);
+  }
+  99% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateY(-200%);
+  }
+}
+.start-div {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/background/SS.png);
+  background-size: cover;
+}
+.text {
+  text-align: center;
+  margin-bottom: 35%;
+}
+.text h1 {
+  font-size: 6rem;
+}
+
+.text h2 {
+  font-size: 2rem;
+  animation: shake 2s infinite;
+}
+@keyframes LoadIn {
+  from {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%);
+  }
+  to {
+    clip-path: polygon(0% 0%, 0% 0%, 0% 50%, 0% 100%, 0% 100%);
+  }
+}
+
+.loading-screen {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  z-index: 500;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  background: #191a1a;
+  text-align: center;
+}
+h1,
+h2,
+h3 {
+  margin: auto;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  color: #a3e1f0;
+}
+
+span {
+  position: relative;
+  top: 0.63em;
+  display: inline-block;
+  text-transform: uppercase;
+  margin: auto;
+  opacity: 0;
+  transform: rotateX(-90deg);
+}
+
+.let1 {
+  animation: drop 2s ease-in-out infinite;
+  animation-delay: 1.2s;
+}
+
+.let2 {
+  animation: drop 2s ease-in-out infinite;
+  animation-delay: 1.3s;
+}
+
+.let3 {
+  animation: drop 2s ease-in-out infinite;
+  animation-delay: 1.4s;
+}
+
+.let4 {
+  animation: drop 2s ease-in-out infinite;
+  animation-delay: 1.5s;
+}
+
+.let5 {
+  animation: drop 2s ease-in-out infinite;
+  animation-delay: 1.6s;
+}
+
+.let6 {
+  animation: drop 2s ease-in-out infinite;
+  animation-delay: 1.7s;
+}
+
+.let7 {
+  animation: drop 2s ease-in-out infinite;
+  animation-delay: 1.8s;
+}
+.let8 {
+  animation: drop 2s ease-in-out infinite;
+  animation-delay: 1.9s;
+}
+.let9 {
+  animation: drop 2s ease-in-out infinite;
+  animation-delay: 2s;
+}
+.let10 {
+  animation: drop 2s ease-in-out infinite;
+  animation-delay: 2.1s;
+}
+
+@keyframes drop {
+  10% {
+    opacity: 0.5;
+  }
+  20% {
+    opacity: 1;
+    top: 3.78em;
+    transform: rotateX(-360deg);
+  }
+  80% {
+    opacity: 1;
+    top: 3.78em;
+    transform: rotateX(-360deg);
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    top: 6.94em;
+  }
+}
