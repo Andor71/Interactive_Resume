@@ -80,7 +80,9 @@ div[class*="element-c"] {
   position: absolute;
   right: 7.5%;
   top: 10%;
-  width: 50%;
+  min-width: 30%;
+  max-width: 50%;
+  width: auto;
   padding: 2rem;
   animation: SlidInElements 1.5s forwards;
 }
@@ -166,7 +168,7 @@ div[class*="ElementC"] h1 {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background-image: url(/img/background/SS.png);
+  background-image: url(img/background/SS.png);
   background-size: cover;
 }
 .text {
