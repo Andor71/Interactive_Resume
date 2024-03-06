@@ -14,6 +14,7 @@
   width: 100%;
 }
 img {
+  margin-right: 1rem;
   max-width: 150px;
 }
 .text-center {
@@ -168,7 +169,7 @@ div[class*="ElementC"] h1 {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background-image: url(img/background/SS.png);
+  background-image: url(../img/background/SS.png);
   background-size: cover;
 }
 .text {
