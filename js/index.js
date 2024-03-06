@@ -33,7 +33,7 @@ const bonFire = new Bonfire({
     x: 0,
     y: mainCanvas.height / 2 + playerOffset,
   },
-  imageSrc: ["./img/character/idle.png", "./img/character/kidleb.png"],
+  imageSrc: ["./img/character/kidle.png", "./img/character/kidleb.png"],
   scale: window.innerHeight * 0.005,
   frameMax: 4,
 });
