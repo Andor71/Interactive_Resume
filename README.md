@@ -2,6 +2,8 @@
 
 Welcome to the GitHub repository for my interactive resume. This project is a unique way to showcase my skills, experiences, and projects in a dynamic, interactive format.
 
+![alt text](https://github.com/Andor71/Interactive_Resume/blob/main/resume.PNG?raw=true)
+
 ## Features
 
 - **Interactive Elements**: Navigate through my resume in a non-linear fashion.
